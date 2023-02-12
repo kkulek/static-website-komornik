@@ -33,14 +33,14 @@ export default function Example() {
 							>
 								<div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
 									<div className="flex w-full items-center justify-between md:w-auto">
-										<a href="#">
+										{/* <a href="#">
 											<span className="sr-only">Your Company</span>
 											<img
 												alt="Your Company"
 												className="h-8 w-auto sm:h-10"
 												src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
 											/>
-										</a>
+										</a> */}
 										<div className="-mr-2 flex items-center md:hidden">
 											<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
 												<span className="sr-only">Open main menu</span>
@@ -49,7 +49,7 @@ export default function Example() {
 										</div>
 									</div>
 								</div>
-								<div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+								<div className="hidden  md:block md:space-x-8 md:pr-4">
 									{navigation.map((item) => (
 										<a
 											key={item.name}
@@ -123,9 +123,9 @@ export default function Example() {
 					<main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
 						<div className="sm:text-center lg:text-left">
 							<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-								<span className="block xl:inline">Data to enrich your</span>{" "}
-								<span className="block text-indigo-600 xl:inline">
-									online business
+								<span className="block xl:inline xl:pr-14">Komornik sądowy</span>{" "}
+								<span className="block text-3xl md:text-4xl xl:inline">
+									przy sądzie rejonowym w płocku
 								</span>
 							</h1>
 							<p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
