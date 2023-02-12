@@ -3,12 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Area from "../components/Area";
+import Logos from "../components/Logos";
+import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 ---
 
 <Layout title="Sylwester Karolak - komornik przy sądzie rejonowym w Płocku">
 	<main>
-		<Hero />
+		<Hero client:idle />
 		<Services />
 		<Area />
+		<Logos client:idle />
+		<Faq client:idle />
+		<Footer />
 	</main>
 </Layout>
