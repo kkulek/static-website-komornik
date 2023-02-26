@@ -74,13 +74,17 @@ export default function Example() {
 					<div className="mt-8 lg:mt-0">
 						<div className="mx-auto max-w-prose text-base lg:max-w-none">
 							<p className="text-lg text-gray-500">
-								Sagittis scelerisque nulla cursus in enim consectetur quam.
-								Dictum urna sed consectetur neque tristique pellentesque.
-								Blandit amet, sed aenean erat arcu morbi.
+								Komornik Sądowy przy Sądzie Rejonowym w Płocku Sylwester Karolak
+								stosownie do treści art. 8 Ustawy z dnia 22 marca 2018 r. o
+								komornikach sądowych (Dz. U. 2018 poz. 771) działa na obszarze
+								swojego rewiru, którym jest obszar właściwości Sądu Rejonowego w
+								Płocku i obejmuje teren gminy miasta Płock oraz gmin: Bielsk,
+								Bodzanów, Brudzeń Duży, Bulkowo, Mała Wieś, Radzanowo, Słupno,
+								Stara Biała, Staroźreby i Wyszogród.
 							</p>
 						</div>
 						<div className="prose prose-indigo mx-auto mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-							<p>
+							{/* <p>
 								Sollicitudin tristique eros erat odio sed vitae, consequat
 								turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
 								eu viverra donec ut volutpat donec laoreet quam urna.
@@ -90,26 +94,33 @@ export default function Example() {
 								sit nisi lorem pulvinar. Urna, laoreet fusce nibh leo. Dictum et
 								et et sit. Faucibus sed non gravida lectus dignissim imperdiet
 								a.
-							</p>
+							</p> */}
 							<p>
-								Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem
-								arcu, metus, egestas netus cursus. In.
+								Ponadto stosownie do treści art. 10 Ustawy z dnia 22 marca 2018
+								r. o komornikach sądowych (Dz. U. 2018 poz. 771), w sprawach, o
+								których mowa w art. 3 ust. 3 pkt 1–2a, wierzyciel ma prawo
+								wyboru komornika sądowego Sylwestra Karolaka do prowadzenia
+								postępowań egzekucyjnych na obszarze właściwości sądu
+								apelacyjnego w Łodzi, z wyjątkiem spraw:
 							</p>
-							<ul role="list">
-								<li>Quis elit egestas venenatis mattis dignissim.</li>
+							<ol role="list">
+								<li>o egzekucję z nieruchomości; </li>
+								<li>o wydanie nieruchomości;</li>
 								<li>
-									Cras cras lobortis vitae vivamus ultricies facilisis tempus.
+									o opróżnienie pomieszczeń, w tym lokali mieszkalnych, z osób
+									lub rzeczy;
 								</li>
-								<li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-							</ul>
+								<li>
+									w których przepisy o egzekucji z nieruchomości stosuje się
+									odpowiednio.
+								</li>
+							</ol>
 							<p>
-								Rhoncus nisl, libero egestas diam fermentum dui. At quis
-								tincidunt vel ultricies. Vulputate aliquet velit faucibus
-								semper. Pellentesque in venenatis vestibulum consectetur nibh
-								id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-								fermentum lacus in. Viverra.
+								Wierzyciel, dokonując wyboru komornika, składa wraz z wnioskiem
+								o wszczęcie egzekucji pisemne oświadczenie, że korzysta z prawa
+								wyboru komornika.
 							</p>
-							<h3>How we helped</h3>
+							{/* <h3>How we helped</h3>
 							<p>
 								Tincidunt integer commodo, cursus etiam aliquam neque, et.
 								Consectetur pretium in volutpat, diam. Montes, magna cursus
@@ -121,7 +132,7 @@ export default function Example() {
 								Sagittis scelerisque nulla cursus in enim consectetur quam.
 								Dictum urna sed consectetur neque tristique pellentesque.
 								Blandit amet, sed aenean erat arcu morbi.
-							</p>
+							</p> */}
 						</div>
 					</div>
 				</div>

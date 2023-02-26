@@ -9,37 +9,49 @@ import {
 
 const features = [
 	{
-		name: "Egzekucja świadczeń",
+		name: "Egzekucja roszczeń pieniężnych",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: CloudArrowUpIcon,
 	},
 	{
-		name: "Spis inwentarza",
+		name: "Egzekucja roszczeń niepieniężnych",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: LockClosedIcon,
 	},
 	{
-		name: "Protokuł stanu faktycznego",
+		name: "Zabezpieczenie roszczeń",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: ArrowPathIcon,
 	},
 	{
-		name: "Zabezpieczenia roszczeń",
+		name: "Spis inwentarza",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: ShieldCheckIcon,
 	},
 	{
-		name: "Egzekucja świadczeń",
+		name: "Sporządzanie protokołu stanu faktycznego",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: CogIcon,
 	},
 	{
-		name: "Nadzór nad licytacją",
+		name: "Doręczanie korespondencji sądowej",
+		description:
+			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+		icon: ServerIcon,
+	},
+	{
+		name: "Sprawowanie urzędowego nadzoru nad dobrowolnymi publicznymi licytacjami",
+		description:
+			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+		icon: CogIcon,
+	},
+	{
+		name: "Wykonywanie zadań określonych w innych ustawach ",
 		description:
 			"Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
 		icon: ServerIcon,
@@ -56,10 +68,13 @@ export default function Example() {
 				<p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 					W jaki sposób mogę pomóc?
 				</p>
-				<p className="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-					Phasellus lorem quam molestie id quisque diam aenean nulla in.
-					Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend
-					condimentum id viverra nulla.
+				<p className="mx-auto mt-5 text-xl text-gray-500">
+					Komornik jest funkcjonariuszem publicznym działającym przy Sądzie
+					Rejonowym. Komornik jest organem władzy publicznej w zakresie
+					wykonywania czynności w postępowaniu egzekucyjnym i zabezpieczającym.
+					Stosownie do treści art. 3 i 4 Ustawy z dnia 22 marca 2018 r o
+					komornikach sądowych (Dz. U. 2018 poz. 771) komornikowi powierza się
+					następujące zadania: 
 				</p>
 				<div className="mt-20">
 					<div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -75,12 +90,12 @@ export default function Example() {
 												/>
 											</span>
 										</div>
-										<h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+										<h3 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">
 											{feature.name}
 										</h3>
-										<p className="mt-5 text-base leading-7 text-gray-600">
+										{/* <p className="mt-5 text-base leading-7 text-gray-600">
 											{feature.description}
-										</p>
+										</p> */}
 									</div>
 								</div>
 							</div>
