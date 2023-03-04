@@ -3,26 +3,31 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
 	{
-		question: "What's the best thing about Switzerland?",
+		question: "Co musi zrobić wierzyciel aby wszcząć postepowanie egzekucyjne?",
 		answer:
-			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+			"W celu wszczęcia postępowania egzekucyjnego wierzyciel zobowiązany jest złożyć do komornika wniosek o wszczęcie egzekucji ze wskazaniem swoich podstawowych danych identyfikacyjnych oraz danych identyfikacyjnych dłużnika. We wniosku egzekucyjnym należy także określić wartość roszczenia podlegającego egzekucji. Ponadto wierzyciel może wskazać sposób albo sposoby prowadzenia egzekucji oraz ewentualnie wskazać znane mu składniki majątku dłużnika.  Do wniosku wierzyciel zobowiązany jest także załączyć tytuł wykonawczy w oryginale.",
 	},
 	{
-		question: "What's the best thing about Switzerland?",
+		question:
+			"Czy komornik może zająć wszystkie środki znajdujące się na rachunku oszczędnościowo-rozliczeniowym dłużnika?",
 		answer:
-			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+			"Co do zasady nie. Stosownie bowiem do treści art. 54.1 Ustawy z dnia 29 sierpnia 1997 r. - Prawo bankowe Dz.U 1997 nr 140 poz. 939 stanowi, że środki pieniężne znajdujące się na rachunkach oszczędnościowych, rachunkach oszczędnościowo-rozliczeniowych oraz na rachunkach terminowych lokat oszczędnościowych jednej osoby, niezależnie od liczby zawartych umów, są wolne od zajęcia na podstawie sądowego lub administracyjnego tytułu wykonawczego, w każdym miesiącu kalendarzowym, w którym obowiązuje zajęcie, do wysokości 75% minimalnego wynagrodzenia za pracę, ustalanego na podstawie ustawy z dnia 10 października 2002 r. o minimalnym wynagrodzeniu za pracę (Dz. U. z 2020 r. poz. 2207), przysługującego pracownikowi zatrudnionemu w pełnym miesięcznym wymiarze czasu pracy.",
+
+		answer2:
+			"Powyższe ograniczenie nie dotyczy egzekucji roszczeń alimentacyjnych. Wierzytelności z rachunku bankowego podlegają egzekucji na zaspokojenie alimentów w pełnej wysokości (art. 1083. § 2 kodeksu postępowania cywilnego)",
 	},
 	{
-		question: "What's the best thing about Switzerland?",
+		question:
+			"Czy komornik może zmniejszyć dochodzone roszczenie na wniosek dłużnika?",
 		answer:
-			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+			"Nie. Komornik prowadzi postępowanie egzekucyjne zgodnie z wnioskiem wierzyciela oraz w granicach tytułu wykonawczego. Gestorem postępowania jest wierzyciel i to on decyduje o zakresie egzekwowanego roszczenia. Komornik nie ma zatem uprawnienia do samodzielnego zmniejszania dochodzonego roszczenia, co dotyczy zarówno należności głównej, odsetek oraz innych należności ubocznych.",
 	},
-	{
-		question: "What's the best thing about Switzerland?",
-		answer:
-			"I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-	},
-	// More questions...
+	// {
+	// 	question:
+	// 		"",
+	// 	answer:
+	// 		"",
+	// },
 ];
 
 function classNames(...classes) {
@@ -60,6 +65,7 @@ export default function Example() {
 										</dt>
 										<Disclosure.Panel as="dd" className="mt-2 pr-12">
 											<p className="text-base text-gray-500">{faq.answer}</p>
+											{faq.answer2 && <p className="mt-2 text-base text-gray-500">{faq.answer2}</p>}
 										</Disclosure.Panel>
 									</>
 								)}

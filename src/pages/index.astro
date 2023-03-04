@@ -4,19 +4,21 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Area from "../components/Area";
 import Logos from "../components/Logos";
+import DocumentsDownload from "../components/DocumentsDownload"
 import About from "../components/About";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 ---
 
-<Layout title="Sylwester Karolak - komornik przy sądzie rejonowym w Płocku">
+<Layout title="Sylwester Karolak - komornik przy Sądzie Rejonowym w Płocku">
 	<main>
 		<Hero client:idle />
 		<Services />
 		<Area />
 		<Logos client:idle />
-		<About client:load />
+		<DocumentsDownload client:idle/>
+		<About client:idle />
 		<Faq client:idle />
-		<Footer client:idle />
 	</main>
+	<Footer client:idle />
 </Layout>
