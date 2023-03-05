@@ -1,11 +1,27 @@
 const navigation = {
-	main: [
+	solutions: [
+		{ name: "Marketing", href: "#" },
+		{ name: "Analytics", href: "#" },
+		{ name: "Commerce", href: "#" },
+		{ name: "Insights", href: "#" },
+	],
+	support: [
+		{ name: "Pricing", href: "#" },
+		{ name: "Documentation", href: "#" },
+		{ name: "Guides", href: "#" },
+		{ name: "API Status", href: "#" },
+	],
+	company: [
 		{ name: "About", href: "#" },
 		{ name: "Blog", href: "#" },
 		{ name: "Jobs", href: "#" },
 		{ name: "Press", href: "#" },
-		{ name: "Accessibility", href: "#" },
 		{ name: "Partners", href: "#" },
+	],
+	legal: [
+		{ name: "Claim", href: "#" },
+		{ name: "Privacy", href: "#" },
+		{ name: "Terms", href: "#" },
 	],
 	social: [
 		{
@@ -72,40 +88,118 @@ const navigation = {
 	],
 };
 
-export default function Example() {
+export default function Footer() {
 	return (
-		<footer className="bg-white" id="kontakt">
-			<div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-				<nav
-					className="-mx-5 -my-2 flex flex-wrap justify-center"
-					aria-label="Footer"
-				>
-					{navigation.main.map((item) => (
-						<div key={item.name} className="px-5 py-2">
-							<a
-								href={item.href}
-								className="text-base text-gray-500 hover:text-gray-900"
-							>
-								{item.name}
-							</a>
+		<footer className="bg-white" aria-labelledby="footer-heading" id="kontakt">
+			<h2 id="footer-heading" className="sr-only">
+				Footer
+			</h2>
+			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+				<div className="xl:grid xl:grid-cols-3 xl:gap-8">
+					<div className="space-y-8 xl:col-span-1">
+						<img
+							className="h-10"
+							src="https://tailwindui.com/img/logos/mark.svg?color=gray&shade=300"
+							alt="Company name"
+						/>
+						<p className="text-base text-gray-500">
+							Making the world a better place through constructing elegant
+							hierarchies.
+						</p>
+						<div className="flex space-x-6">
+							{navigation.social.map((item) => (
+								<a
+									key={item.name}
+									href={item.href}
+									className="text-gray-400 hover:text-gray-500"
+								>
+									<span className="sr-only">{item.name}</span>
+									<item.icon className="h-6 w-6" aria-hidden="true" />
+								</a>
+							))}
 						</div>
-					))}
-				</nav>
-				<div className="mt-8 flex justify-center space-x-6">
-					{navigation.social.map((item) => (
-						<a
-							key={item.name}
-							href={item.href}
-							className="text-gray-400 hover:text-gray-500"
-						>
-							<span className="sr-only">{item.name}</span>
-							<item.icon className="h-6 w-6" aria-hidden="true" />
-						</a>
-					))}
+					</div>
+					<div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+						<div className="md:grid md:grid-cols-2 md:gap-8">
+							<div>
+								<h3 className="text-base font-medium text-gray-900">
+									Solutions
+								</h3>
+								<ul role="list" className="mt-4 space-y-4">
+									{navigation.solutions.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-500 hover:text-gray-900"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+							<div className="mt-12 md:mt-0">
+								<h3 className="text-base font-medium text-gray-900">Support</h3>
+								<ul role="list" className="mt-4 space-y-4">
+									{navigation.support.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-500 hover:text-gray-900"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+						<div className="md:grid md:grid-cols-2 md:gap-8">
+							<div>
+								<h3 className="text-base font-medium text-gray-900">Company</h3>
+								<ul role="list" className="mt-4 space-y-4">
+									{navigation.company.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-500 hover:text-gray-900"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+							<div className="mt-12 md:mt-0">
+								<h3 className="text-base font-medium text-gray-900">Legal</h3>
+								<ul role="list" className="mt-4 space-y-4">
+									{navigation.legal.map((item) => (
+										<li key={item.name}>
+											<a
+												href={item.href}
+												className="text-base text-gray-500 hover:text-gray-900"
+											>
+												{item.name}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<p className="mt-8 text-center text-base text-gray-400">
-					&copy; 2020 Your Company, Inc. All rights reserved.
-				</p>
+				<div className="mt-12 border-t border-gray-200 pt-8">
+					<p className="text-sm text-gray-400 xl:text-center">
+						&copy; 2023 Komornik Sylwester Karolak.{" "}
+						<a
+							href="http://360stack.pl"
+							target="_blank"
+							className="text-red-400"
+						>
+							Projekt i wykonanie <span className="font-bold">360stack.pl</span>
+						</a>
+					</p>
+				</div>
 			</div>
 		</footer>
 	);

@@ -1,12 +1,13 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import temida from "../images/temida.jpg"
 
 const navigation = [
-	{ name: "Usługi", href: "#uslugi" },
+	{ name: "O kancelarii", href: "#uslugi" },
 	{ name: "Właściwość terytorialna", href: "#wlasciwosc-terytorialna" },
 	{ name: "Dokumenty", href: "#dokumenty" },
-	{ name: "Licytacje", href: "#" },
+	{ name: "O mnie", href: "#about" },
 	{ name: "Kontakt", href: "#kontakt" },
 ];
 
@@ -38,11 +39,11 @@ export default function Example() {
 											<img
 												alt="Your Company"
 												className="h-8 w-auto sm:h-10"
-												src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+												src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
 											/>
 										</a> */}
 										<div className="-mr-2 flex items-center md:hidden">
-											<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+											<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
 												<span className="sr-only">Open main menu</span>
 												<Bars3Icon className="h-6 w-6" aria-hidden="true" />
 											</Popover.Button>
@@ -61,7 +62,7 @@ export default function Example() {
 									))}
 									{/* <a
 										href="#"
-										className="font-medium text-indigo-600 hover:text-indigo-500"
+										className="font-medium text-red-600 hover:text-red-500"
 									>
 										Log in
 									</a> */}
@@ -84,15 +85,15 @@ export default function Example() {
 							>
 								<div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
 									<div className="flex items-center justify-between px-5 pt-4">
-										<div>
+										{/* <div>
 											<img
 												className="h-8 w-auto"
-												src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+												src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
 												alt=""
 											/>
-										</div>
+										</div> */}
 										<div className="-mr-2">
-											<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+											<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
 												<span className="sr-only">Close main menu</span>
 												<XMarkIcon className="h-6 w-6" aria-hidden="true" />
 											</Popover.Button>
@@ -109,12 +110,6 @@ export default function Example() {
 											</a>
 										))}
 									</div>
-									<a
-										href="#"
-										className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
-									>
-										Log in
-									</a>
 								</div>
 							</Popover.Panel>
 						</Transition>
@@ -138,18 +133,18 @@ export default function Example() {
 							<div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
 								<div className="rounded-md shadow">
 									<a
-										href="#"
-										className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+										href="#uslugi"
+										className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
 									>
-										Get started
+										O kancelarii
 									</a>
 								</div>
 								<div className="mt-3 sm:mt-0 sm:ml-3">
 									<a
-										href="#"
-										className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg"
+										href="tel:+48798409557"
+										className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-100 px-8 py-3 text-base font-medium text-red-700 hover:bg-red-200 md:py-4 md:px-10 md:text-lg"
 									>
-										Live demo
+										Zadzwoń: 798 409 557
 									</a>
 								</div>
 							</div>
@@ -160,7 +155,8 @@ export default function Example() {
 			<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 				<img
 					className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-					src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+					// src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+					src={temida}
 					alt=""
 				/>
 			</div>

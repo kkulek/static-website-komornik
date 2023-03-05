@@ -22,6 +22,10 @@ const faqs = [
 		answer:
 			"Nie. Komornik prowadzi postępowanie egzekucyjne zgodnie z wnioskiem wierzyciela oraz w granicach tytułu wykonawczego. Gestorem postępowania jest wierzyciel i to on decyduje o zakresie egzekwowanego roszczenia. Komornik nie ma zatem uprawnienia do samodzielnego zmniejszania dochodzonego roszczenia, co dotyczy zarówno należności głównej, odsetek oraz innych należności ubocznych.",
 	},
+	{
+		question: "Czy dłużnik może dobrowolnie spłacić zadłużenie u komornika?",
+		answer: "Tak, dłużnik może dobrowolnie spłacić zadłużenie u komornika dokonując wpłaty na rachunekbankowy kancelarii bądź dokonując wpłaty bezpośrednio w kancelarii komornika. W celu spłatycałości zadłużenia zaleca się kontakt z kancelarią komornika celem uzyskania informacji przezdłużnika, na temat aktualnego stanu zadłużenia.",
+	},
 	// {
 	// 	question:
 	// 		"",

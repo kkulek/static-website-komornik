@@ -1,7 +1,7 @@
 
 export default function About() {
 	return (
-		<div className="relative overflow-hidden bg-white py-16">
+		<div className="relative overflow-hidden bg-white py-16" id="about">
 			<div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
 				<div
 					className="relative mx-auto h-full max-w-prose text-lg"
@@ -108,7 +108,7 @@ export default function About() {
 			<div className="relative px-4 sm:px-6 lg:px-8">
 				<div className="mx-auto max-w-prose text-lg">
 					<h1>
-						<span className="block text-center text-lg font-semibold text-indigo-600">
+						<span className="block text-center text-lg font-semibold text-red-600">
 							Komornik Sądowy przy Sądzie Rejonowym w Płocku
 						</span>
 						<span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -116,7 +116,7 @@ export default function About() {
 						</span>
 					</h1>
 				</div>
-				<div className="prose prose-lg prose-indigo mx-auto mt-12 text-gray-500">
+				<div className="prose prose-lg prose-red mx-auto mt-12 text-gray-500">
 					<p>
 						Jestem absolwentem Liceum Ogólnokształcącego im. Marszałka
 						Stanisława Małachowskiego w Płocku. Ukończyłem Administrację na WPiA
@@ -146,7 +146,6 @@ export default function About() {
 						/>
 						<figcaption>
 							Sylwester Karolak Komornik Sądowy przy Sądzie Rejonowym w Płocku
-							(ten podpis jest ważny mimo iż to powtórzenie)
 						</figcaption>
 					</figure>
 					<h2>Doświadczenie zawodowe</h2>
