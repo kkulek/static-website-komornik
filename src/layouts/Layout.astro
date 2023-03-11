@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 export interface Props {
 	title: string;
 }
@@ -11,10 +12,14 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<SEO 
+		title="Komornik Płock - Sylwester Karolak"
+		description="Profesjonalne usługi zapewni doświadczony komornik w Płocku - Sylwester Karolak. Kompleksowy zakres usług zarówno dla dłużników, jak i wierzycieli."
+		canonical="https://komornikkarolak.pl"
+		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content="Tutaj musimy wstawić jakiś opis" />
-		<title>{title}</title>
+		<!-- <title>{title}</title> -->
 	</head>
 	<body>
 		<slot />

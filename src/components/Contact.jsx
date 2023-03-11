@@ -1,5 +1,5 @@
 import React from "react";
-import NavContact from "./NavContact";
+import NavKontakt from './NavKontakt';
 import ContactData from "./ContactData";
 import Header from "./Header";
 import Faq from "./Faq"
@@ -19,7 +19,7 @@ function Contact() {
 						>
 							<polygon points="50,0 100,0 50,100 0,100" />
 						</svg>
-						<NavContact />
+						<NavKontakt />
 					</div>
 					<Header />
 					<ContactData />

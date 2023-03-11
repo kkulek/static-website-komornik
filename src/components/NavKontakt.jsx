@@ -3,11 +3,14 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-	{ name: "O kancelarii", href: "./#uslugi" },
-	{ name: "Właściwość terytorialna", href: "./#wlasciwosc-terytorialna" },
-	{ name: "Dokumenty", href: "./#dokumenty" },
-	{ name: "O mnie", href: "./#about" },
-	{ name: "Kontakt", href: "./kontakt" },
+	{ name: "O kancelarii", href: "https://komornikkarolak.pl/#uslugi" },
+	{
+		name: "Właściwość terytorialna",
+		href: "https://komornikkarolak.pl/#wlasciwosc-terytorialna",
+	},
+	{ name: "Dokumenty", href: "https://komornikkarolak.pl/#dokumenty" },
+	{ name: "O mnie", href: "https://komornikkarolak.pl/#about" },
+	{ name: "Kontakt", href: "#" },
 ];
 
 import React from "react";
@@ -23,6 +26,14 @@ function Nav() {
 					>
 						<div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
 							<div className="flex w-full items-center justify-between md:w-auto">
+								{/* <a href="#">
+											<span className="sr-only">Your Company</span>
+											<img
+												alt="Your Company"
+												className="h-8 w-auto sm:h-10"
+												src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
+											/>
+										</a> */}
 								<div className="-mr-2 flex items-center md:hidden">
 									<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
 										<span className="sr-only">Open main menu</span>
@@ -41,6 +52,12 @@ function Nav() {
 									{item.name}
 								</a>
 							))}
+							{/* <a
+										href="#"
+										className="font-medium text-red-600 hover:text-red-500"
+									>
+										Log in
+									</a> */}
 						</div>
 					</nav>
 				</div>
@@ -60,6 +77,13 @@ function Nav() {
 					>
 						<div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
 							<div className="flex items-center justify-between px-5 pt-4">
+								{/* <div>
+											<img
+												className="h-8 w-auto"
+												src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
+												alt=""
+											/>
+										</div> */}
 								<div className="-mr-2">
 									<Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
 										<span className="sr-only">Close main menu</span>

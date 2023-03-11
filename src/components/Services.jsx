@@ -89,9 +89,9 @@ export default function Example() {
 												<img src={paragraph} alt="Paragraf" className="h-8 w-8" />
 											</span>
 										</div>
-										<h2 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">
+										<h3 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">
 											{feature.name}
-										</h2>
+										</h3>
 										{/* <p className="mt-5 text-base leading-7 text-gray-600">
 											{feature.description}
 										</p> */}
