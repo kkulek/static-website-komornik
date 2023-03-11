@@ -37,12 +37,12 @@ export default function DocumentsDownload() {
 		<div className="bg-white" id="dokumenty">
 			<div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:px-8 lg:py-40">
 				<div>
-					<h2 className="text-lg font-semibold leading-8 tracking-tight text-red-600">
+					<p className="text-lg font-semibold leading-8 tracking-tight text-red-600">
 						Kliknij, aby pobrać
-					</h2>
-					<p className="mt-2 text-4xl font-bold tracking-tight text-gray-900">
-						Ważne dokumenty
 					</p>
+					<h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">
+						Ważne dokumenty
+					</h2>
 					<p className="mt-6 text-base leading-7 text-gray-600">
 						Krótki opis co to za dokumenty. Lorem ipsum, dolor sit amet
 						consectetur adipisicing elit. Maiores impedit perferendis suscipit
@@ -67,11 +67,6 @@ export default function DocumentsDownload() {
 											{feature.name}
 										</p>
 									</dt>
-									{feature.description && (
-										<dd className="mt-2 ml-10 text-base leading-7 text-gray-600">
-											{feature.description}
-										</dd>
-									)}
 								</div>
 							</a>
 						))}

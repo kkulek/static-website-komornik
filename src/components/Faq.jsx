@@ -24,7 +24,8 @@ const faqs = [
 	},
 	{
 		question: "Czy dłużnik może dobrowolnie spłacić zadłużenie u komornika?",
-		answer: "Tak, dłużnik może dobrowolnie spłacić zadłużenie u komornika dokonując wpłaty na rachunekbankowy kancelarii bądź dokonując wpłaty bezpośrednio w kancelarii komornika. W celu spłatycałości zadłużenia zaleca się kontakt z kancelarią komornika celem uzyskania informacji przezdłużnika, na temat aktualnego stanu zadłużenia.",
+		answer:
+			"Tak, dłużnik może dobrowolnie spłacić zadłużenie u komornika dokonując wpłaty na rachunekbankowy kancelarii bądź dokonując wpłaty bezpośrednio w kancelarii komornika. W celu spłatycałości zadłużenia zaleca się kontakt z kancelarią komornika celem uzyskania informacji przezdłużnika, na temat aktualnego stanu zadłużenia.",
 	},
 	// {
 	// 	question:
@@ -43,8 +44,8 @@ export default function Example() {
 		<div className="bg-gray-50">
 			<div className="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
 				<div className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
-					<h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-						Najczęściej zadawane pytania
+					<h2 className="lg:text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+						Najczęściej zadawane pytania komornikowi
 					</h2>
 					<dl className="mt-6 space-y-6 divide-y divide-gray-200">
 						{faqs.map((faq) => (
@@ -67,10 +68,16 @@ export default function Example() {
 												</span>
 											</Disclosure.Button>
 										</dt>
-										<Disclosure.Panel as="dd" className="mt-2 pr-12">
-											<p className="text-base text-gray-500">{faq.answer}</p>
-											{faq.answer2 && <p className="mt-2 text-base text-gray-500">{faq.answer2}</p>}
-										</Disclosure.Panel>
+										<dd>
+											<Disclosure.Panel as="dd" className="mt-2 pr-12">
+												<p className="text-base text-gray-500">{faq.answer}</p>
+												{faq.answer2 && (
+													<p className="mt-2 text-base text-gray-500">
+														{faq.answer2}
+													</p>
+												)}
+											</Disclosure.Panel>
+										</dd>
 									</>
 								)}
 							</Disclosure>

@@ -1,3 +1,4 @@
+import documentImg from '../images/document.jpg'
 
 export default function About() {
 	return (
@@ -107,14 +108,14 @@ export default function About() {
 			</div>
 			<div className="relative px-4 sm:px-6 lg:px-8">
 				<div className="mx-auto max-w-prose text-lg">
-					<h1>
+					<h2>
 						<span className="block text-center text-lg font-semibold text-red-600">
 							Komornik Sądowy przy Sądzie Rejonowym w Płocku
 						</span>
 						<span className="mt-2 block text-center text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 							Sylwester Karolak
 						</span>
-					</h1>
+					</h2>
 				</div>
 				<div className="prose prose-lg prose-red mx-auto mt-12 text-gray-500">
 					<p>
@@ -131,15 +132,15 @@ export default function About() {
 
 					<blockquote>
 						<p>
-							Mądry cytat, ewentualnie można wstawić informację wyżej, że
-							cytowane tutaj słowa są kogoś znanego i znaczącego (może coś
-							Sokratesa?)
-						</p>
+							Żadne zadanie nie jest szczególnie trudne, jeśli podzielisz je na
+							mniejsze podzadania.
+						</p>{" "}
+						Henry Ford
 					</blockquote>
 					<figure>
 						<img
 							className="w-full rounded-lg"
-							src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
+							src={documentImg}
 							alt="Sylwester Karolak Komornik Sądowy przy Sądzie Rejonowym w Płocku"
 							width={1310}
 							height={873}
@@ -150,8 +151,7 @@ export default function About() {
 					</figure>
 					<h2>Doświadczenie zawodowe</h2>
 					<p>
-						Doświadczenie zawodowe w egzekucji sądowej zdobywałem od 2009r. jako
-						pracownik biurowy (tutaj zdecydowanie bym coś zmienił; jak się zdzwonimy i pogadamy to wymyślimy wspólnie wersję), aplikant komorniczy oraz asesor komorniczy.
+						Doświadczenie zawodowe w egzekucji sądowej zdobywam już od 2009r.
 						Decyzją Ministra Sprawiedliwości z dnia 21-11-2022r. zostałem
 						powołany na stanowisko Komornika Sądowego przy Sądzie Rejonowym w
 						Płocku.
@@ -161,8 +161,7 @@ export default function About() {
 						praktyczną do pełnienia funkcji Komornika Sądowego. W swojej pracy
 						do każdej prowadzonej sprawy podchodzę indywidualnie co daje
 						gwarancje rzetelnego i skutecznego prowadzenia postępowań
-						egzekucyjnych. ( powinno być ok być może jakies zdanie wstawimy w
-						innym szyku ale myślę że będzie bez zmian)
+						egzekucyjnych.
 					</p>
 				</div>
 			</div>

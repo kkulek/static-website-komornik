@@ -7,12 +7,12 @@ export default function Example() {
 				<div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
 				<div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
 					<div>
-						<h2 className="text-lg font-semibold text-red-600">
+						<p className="text-lg font-semibold text-red-600">
 							Obszar wsparcia
-						</h2>
-						<h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+						</p>
+						<h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 							Właściwość terytorialna
-						</h3>
+						</h2>
 					</div>
 				</div>
 				<div className="mt-8 lg:grid lg:grid-cols-3 lg:gap-8">
@@ -51,7 +51,7 @@ export default function Example() {
 							/>
 						</svg>
 						<div className="relative mx-auto max-w-prose text-base lg:max-w-none">
-							<figure>
+							{/* <figure>
 								<div className="aspect-w-12 aspect-h-7 lg:aspect-none">
 									<img
 										className="rounded-lg object-cover object-center shadow-lg"
@@ -68,7 +68,7 @@ export default function Example() {
 									/>
 									<span className="ml-2">Photograph by Marcus O’Leary</span>
 								</figcaption>
-							</figure>
+							</figure> */}
 						</div>
 					</div>
 					<div className="mt-8 lg:mt-0 lg:col-span-2">

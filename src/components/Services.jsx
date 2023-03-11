@@ -64,9 +64,9 @@ export default function Example() {
 	return (
 		<div className="relative bg-white py-24 sm:py-32 lg:py-40" id="uslugi">
 			<div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-				<h2 className="text-lg font-semibold text-red-600 italic">
+				<p className="text-lg font-semibold text-red-600 italic">
 					Executio iuris non habet iniuriam
-				</h2>
+				</p>
 				<p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 					Egzekwowanie prawa nie jest bezprawiem
 				</p>
@@ -86,12 +86,12 @@ export default function Example() {
 									<div className="-mt-6">
 										<div>
 											<span className="inline-flex items-center justify-center rounded-xl bg-red-500 p-3 shadow-lg">
-												<img src={paragraph} alt="" className="h-8 w-8" />
+												<img src={paragraph} alt="Paragraf" className="h-8 w-8" />
 											</span>
 										</div>
-										<h3 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">
+										<h2 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">
 											{feature.name}
-										</h3>
+										</h2>
 										{/* <p className="mt-5 text-base leading-7 text-gray-600">
 											{feature.description}
 										</p> */}
