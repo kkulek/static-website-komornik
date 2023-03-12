@@ -1,4 +1,4 @@
-import temida from "../images/temida.jpg";
+import temida from "../images/temida.webp";
 
 export default function Header() {
 	return (

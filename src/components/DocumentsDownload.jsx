@@ -43,11 +43,9 @@ export default function DocumentsDownload() {
 					<h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">
 						Ważne dokumenty
 					</h2>
-					<p className="mt-6 text-base leading-7 text-gray-600">
-						Krótki opis co to za dokumenty. Lorem ipsum, dolor sit amet
-						consectetur adipisicing elit. Maiores impedit perferendis suscipit
-						eaque, iste dolor cupiditate.
-					</p>
+					{/* <p className="mt-6 text-base leading-7 text-gray-600">
+						
+					</p> */}
 				</div>
 				<div className="mt-20 lg:col-span-2 lg:mt-0">
 					<dl className="grid grid-cols-1 gap-12 md:grid-flow-col md:grid-cols-2 md:grid-rows-3">

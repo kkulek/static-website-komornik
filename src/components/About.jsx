@@ -126,8 +126,7 @@ export default function About() {
 					</p>
 
 					<p>
-						Swoim klientom powtarzam zawsze lub coś na zasadzie: w mojej pracy
-						przyświecają mi słowa (nazwa autora):
+						W mojej codziennej pracy przyświecają mi słowa:
 					</p>
 
 					<blockquote>
@@ -137,7 +136,7 @@ export default function About() {
 						</p>{" "}
 						Henry Ford
 					</blockquote>
-					<figure>
+					{/* <figure>
 						<img
 							className="w-full rounded-lg"
 							src={documentImg}
@@ -148,7 +147,7 @@ export default function About() {
 						<figcaption>
 							Sylwester Karolak Komornik Sądowy przy Sądzie Rejonowym w Płocku
 						</figcaption>
-					</figure>
+					</figure> */}
 					<h2>Doświadczenie zawodowe</h2>
 					<p>
 						Doświadczenie zawodowe w egzekucji sądowej zdobywam już od 2009r.

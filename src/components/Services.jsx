@@ -67,9 +67,9 @@ export default function Example() {
 				<p className="text-lg font-semibold text-red-600 italic">
 					Executio iuris non habet iniuriam
 				</p>
-				<p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
 					Egzekwowanie prawa nie jest bezprawiem
-				</p>
+				</h2>
 				<p className="mx-auto mt-5 text-xl text-gray-500">
 					Komornik jest funkcjonariuszem publicznym działającym przy Sądzie
 					Rejonowym. Komornik jest organem władzy publicznej w zakresie

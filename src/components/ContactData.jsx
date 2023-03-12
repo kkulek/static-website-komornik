@@ -47,7 +47,10 @@ export default function ContactData() {
 									<div className="mt-1">
 										<dt className="sr-only">Mapka dojazdu</dt>
 										<dd>
-											<a href="https://www.google.com/maps/dir//Strzelecka+7%2F14,+09-402+P%C5%82ock/@52.544003,19.6393472,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471c714bd8cda5ab:0x9e432ce65a0aafa7!2m2!1d19.711172!2d52.5422997" target="_blank">
+											<a
+												href="https://www.google.com/maps/dir//Strzelecka+7%2F14,+09-402+P%C5%82ock/@52.544003,19.6393472,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471c714bd8cda5ab:0x9e432ce65a0aafa7!2m2!1d19.711172!2d52.5422997"
+												target="_blank"
+											>
 												<div className="text-gray-600 flex gap-2 items-center">
 													<MapIcon className="h-4 w-4" />
 													<p>Mapka dojazdu</p>
@@ -139,8 +142,8 @@ export default function ContactData() {
 									Adres skrzynek ePUAP:
 								</h3>
 								<div className="mt-2 text-base text-gray-500">
-									<p>domyślna: /KS_Sylwester_Karolak/</p>
-									<p className="mt-1">Ezbiegi: /KS_Sylwester_Karolak/ezbiegi</p>
+									<p>Domyślna: /KS_Sylwester_Karolak/</p>
+									<p className="mt-1">eZbiegi: /KS_Sylwester_Karolak/ezbiegi</p>
 								</div>
 							</div>
 							<div>
@@ -150,15 +153,7 @@ export default function ContactData() {
 								<dl className="mt-2 text-base text-gray-500">
 									<div>
 										<dd className="text-gray-600">Roman Kwieciński</dd>
-										<dt className="sr-only">numer telefonu</dt>
-										<dd>
-											<a href="tel:+48222222222">
-												<div className="text-gray-600 flex gap-2 items-center">
-													<PhoneIcon className="h-4 w-4" />
-													<p>uzupełniamy numer?</p>
-												</div>
-											</a>
-										</dd>
+
 										<dt className="sr-only">email</dt>
 										<dd>
 											<a href="mailto:iod.plock.006@komornik.pl">

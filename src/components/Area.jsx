@@ -7,9 +7,9 @@ export default function Example() {
 				<div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
 				<div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
 					<div>
-						<p className="text-lg font-semibold text-red-600">
+						{/* <p className="text-lg font-semibold text-red-600">
 							Obszar wsparcia
-						</p>
+						</p> */}
 						<h2 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
 							Właściwość terytorialna
 						</h2>
@@ -111,7 +111,7 @@ export default function Example() {
 								Wierzyciel ma prawo wyboru komornika sądowego Sylwestra Karolaka
 								do prowadzenia postępowań egzekucyjnych na obszarze właściwości
 								Sądu Apelacyjnego w Łodzi obejmującego swoim obszarem
-								właściwości sądy okręgowe w:
+								właściwości Sądy Okręgowe w:
 							</p>
 							<p className="italic">
 								<span className="font-bold">Płocku</span> - obejmujący obszar
@@ -158,7 +158,12 @@ export default function Example() {
 									Wierzyciel, dokonując wyboru komornika, składa wraz z
 									wnioskiem o wszczęcie egzekucji pisemne oświadczenie, że
 									korzysta z prawa wyboru komornika (art. 10 ust. 3 Ustawy z
-									dnia 22 marca 2018 r. o komornikach sądowych)
+									dnia 22 marca 2018 r. o komornikach sądowych).
+								</p>
+								<p>
+									W razie wątpliwości oraz szczegółowych pytań dotyczących
+									właściwości terytorialnej zapraszam do kontaktu telefonicznego
+									z kancelarią komornika.
 								</p>
 							</div>
 						</div>

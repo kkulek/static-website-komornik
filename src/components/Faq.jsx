@@ -25,7 +25,21 @@ const faqs = [
 	{
 		question: "Czy dłużnik może dobrowolnie spłacić zadłużenie u komornika?",
 		answer:
-			"Tak, dłużnik może dobrowolnie spłacić zadłużenie u komornika dokonując wpłaty na rachunekbankowy kancelarii bądź dokonując wpłaty bezpośrednio w kancelarii komornika. W celu spłatycałości zadłużenia zaleca się kontakt z kancelarią komornika celem uzyskania informacji przezdłużnika, na temat aktualnego stanu zadłużenia.",
+			"Tak, dłużnik może dobrowolnie spłacić zadłużenie u komornika dokonując wpłaty na rachunek bankowy kancelarii bądź dokonując wpłaty bezpośrednio w kancelarii komornika. W celu spłaty całości zadłużenia zaleca się kontakt z kancelarią komornika celem uzyskania informacji przez dłużnika, na temat aktualnego stanu zadłużenia.",
+	},
+	{
+		question:
+			"Jaką kwotę przekaże komornikowi pracodawca po zajęciu wynagrodzenia za pracę dłużnika?",
+		answer:
+			"Zasady dokonywania potrąceń z wynagrodzenia za pracę dłużnika uregulowane zostały w art. 87 i 87(1) Ustawy z dnia 26 czerwca 1974 r kodeks pracy (Dz.U. 1974 Nr 24 poz. 141). Potrącenia mogą być dokonywane w następujących granicach:",
+		answer2:
+			"1) w razie egzekucji świadczeń alimentacyjnych – do wysokości trzech piątych wynagrodzenia;",
+		answer3:
+			"2) w razie egzekucji innych należności lub potrącania zaliczek pieniężnych – do wysokości połowy wynagrodzenia.",
+		answer4:
+			"Wolna od potrąceń jest kwota wynagrodzenia za pracę w wysokości minimalnego wynagrodzenia za pracę, ustalanego na podstawie odrębnych przepisów, przysługującego pracownikom zatrudnionym w pełnym wymiarze czasu pracy, po odliczeniu składek na ubezpieczenia społeczne, zaliczki na podatek dochodowy od osób fizycznych oraz wpłat dokonywanych do pracowniczego planu kapitałowego, jeżeli pracownik nie zrezygnował z ich dokonywania – przy potrącaniu sum egzekwowanych na mocy tytułów wykonawczych na pokrycie należności innych niż świadczenia alimentacyjne; Jeżeli pracownik jest zatrudniony w niepełnym wymiarze czasu pracy, kwota wolna ulegają zmniejszeniu proporcjonalnie do wymiaru czasu pracy.",
+		answer5:
+			"Kwoty wolne od egzekucji z wynagrodzenia za pracę dłużnika nie dotyczą zatem egzekucji świadczeń alimentacyjnych.",
 	},
 	// {
 	// 	question:
@@ -74,6 +88,21 @@ export default function Example() {
 												{faq.answer2 && (
 													<p className="mt-2 text-base text-gray-500">
 														{faq.answer2}
+													</p>
+												)}
+												{faq.answer3 && (
+													<p className="mt-2 text-base text-gray-500">
+														{faq.answer3}
+													</p>
+												)}
+												{faq.answer4 && (
+													<p className="mt-2 text-base text-gray-500">
+														{faq.answer4}
+													</p>
+												)}
+												{faq.answer5 && (
+													<p className="mt-2 text-base text-gray-500">
+														{faq.answer5}
 													</p>
 												)}
 											</Disclosure.Panel>

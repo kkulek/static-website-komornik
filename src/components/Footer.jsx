@@ -25,12 +25,12 @@ const navigation = {
 
 export default function Footer() {
 	return (
-		<footer className="bg-white" aria-labelledby="footer-heading" id="kontakt">
+		<footer aria-labelledby="footer-heading" id="kontakt">
 			<h2 id="footer-heading" className="sr-only">
 				Stopka
 			</h2>
-			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-				<img className="h-24 mb-8" src={godlo} alt="Godło Polski" />
+			<div className="mx-auto max-w-7xl pt-12 pb-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
+				<img className="h-24 aspect-auto mb-8" src={godlo} alt="Godło Polski" />
 				<div className="md:grid md:grid-cols-2 lg:grid-cols-12 md:gap-8">
 					{/* Podstawowe dane */}
 					<div className="space-y-8 lg:col-span-5">
@@ -54,7 +54,7 @@ export default function Footer() {
 								Kancelaria Komornicza nr XIII w Płocku
 							</p>
 							<div>
-								<div className="space-y-1">
+								<div className="space-y-4">
 									<div className="text-gray-600 flex gap-2 items-center">
 										<MapPinIcon className="h-4 w-4" />
 										<p>ul. Strzelecka 7/14</p>
@@ -139,13 +139,13 @@ export default function Footer() {
 							</p>
 						</div>
 
-						<div className="space-y-2">
+						<div className="space-y-4">
 							<p className="text-lg text-gray-800">
 								<strong>Inspektor Ochrony Danych Osobowych</strong>
 								<br />
 								Roman Kwieciński
 							</p>
-							<div className="space-y-1">
+							<div className="space-y-4">
 								{/* <a href="#" className="text-gray-600 flex gap-2 items-center">
 									<PhoneIcon className="h-4 w-4" />
 									<p>600 600 600</p>
@@ -166,12 +166,12 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="mt-12 border-t border-gray-200 pt-8">
-					<p className="text-sm text-gray-400 xl:text-center">
+					<p className="text-sm text-gray-500 xl:text-center">
 						&copy; 2023 Komornik Sylwester Karolak.{" "}
 						<a
 							href="http://360stack.pl"
 							target="_blank"
-							className="text-red-400"
+							className="text-red-500"
 						>
 							Projekt i wykonanie <span className="font-bold">360stack.pl</span>
 						</a>
