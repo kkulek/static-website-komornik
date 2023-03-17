@@ -160,7 +160,11 @@ export default function Footer() {
 									<AtSymbolIcon className="h-4 w-4" />
 									<p>iod.plock.006@komornik.pl</p>
 								</a>
-								<a href="#" className="text-gray-600 flex gap-2 items-center">
+								<a
+									href="https://komornikkarolak.pl/docs/klauzula-rodo.pdf"
+									target="_blank"
+									className="text-gray-600 flex gap-2 items-center"
+								>
 									<DocumentTextIcon className="h-4 w-4" />
 									<p>Klauzula RODO</p>
 								</a>
