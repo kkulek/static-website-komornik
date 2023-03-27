@@ -1,6 +1,6 @@
 import temida from "../images/temida.webp";
 import Nav from "./Nav";
-import godlo from "../images/godlo.webp";
+import godlo from '../images/godlo.webp';
 
 export default function Example() {
 	return (
@@ -22,11 +22,14 @@ export default function Example() {
 					<section className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
 						<div className="sm:text-center lg:text-left">
 							<div className="flex gap-2 items-center sm:justify-center lg:justify-start">
-								<img
-									className="h-14 aspect-auto"
-									src={godlo}
-									alt="Godło Polski"
-								/>
+								<div className="w-[56px] h-[56px]">
+									<img
+										className="h-[56px] w-full object-cover"
+										src={godlo}
+										alt="Godło Polski"
+									/>
+								</div>
+
 								<p className="text-3xl sm:text-4xl md:text-5xl text-gray-900">
 									<strong>Sylwester Karolak</strong>
 								</p>

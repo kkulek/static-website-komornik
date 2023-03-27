@@ -33,7 +33,13 @@ export default function Footer() {
 				Stopka
 			</h2>
 			<div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-				<img className="h-24 aspect-auto mb-8" src={godlo} alt="Godło Polski" />
+				<div className="w-[88px] h-[88px] mb-8">
+					<img
+						className="h-[88px] w-full object-cover"
+						src={godlo}
+						alt="Godło Polski"
+					/>
+				</div>
 				<div className="md:grid md:grid-cols-2 lg:grid-cols-12 md:gap-8">
 					{/* Podstawowe dane */}
 					<div className="space-y-8 lg:col-span-5">

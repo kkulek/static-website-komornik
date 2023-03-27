@@ -48,27 +48,28 @@ export default function DocumentsDownload() {
 					</p> */}
 				</div>
 				<div className="mt-20 lg:col-span-2 lg:mt-0">
-					<dl className="grid grid-cols-1 gap-12 md:grid-flow-col md:grid-cols-2 md:grid-rows-3">
+					<ul className="grid grid-cols-1 gap-12 md:grid-flow-col md:grid-cols-2 md:grid-rows-3">
 						{features.map((feature, index) => (
-							<a
-								href={`./docs/${feature.doc}`}
-								target="_blank"
+							<li
+								key={`doc-${index}`}
 								className={index === 2 ? "md:col-span-3" : "relative"}
 							>
-								<div key={feature.name} className="relative">
-									<dt>
-										<ArrowDownTrayIcon
-											className="absolute mt-1 h-6 w-6 text-red-600"
-											aria-hidden="true"
-										/>
-										<p className="ml-10 text-lg font-semibold leading-8 text-gray-900">
-											{feature.name}
-										</p>
-									</dt>
-								</div>
-							</a>
+								<a href={`./docs/${feature.doc}`} target="_blank">
+									<div key={feature.name} className="relative">
+										<div>
+											<ArrowDownTrayIcon
+												className="absolute mt-1 h-6 w-6 text-red-600"
+												aria-hidden="true"
+											/>
+											<p className="ml-10 text-lg font-semibold leading-8 text-gray-900">
+												{feature.name}
+											</p>
+										</div>
+									</div>
+								</a>
+							</li>
 						))}
-					</dl>
+					</ul>
 				</div>
 			</div>
 		</div>

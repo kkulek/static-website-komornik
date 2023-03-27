@@ -67,8 +67,11 @@ export default function Example() {
 				<p className="text-lg font-semibold text-red-600 italic">
 					Executio iuris non habet iniuriam
 				</p>
-				<h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+				<p className="text-lg font-semibold text-gray-900">
 					Egzekwowanie prawa nie jest bezprawiem
+				</p>
+				<h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+					Usługi komornicze - Sylwester Karolak
 				</h2>
 				<p className="mx-auto mt-5 text-xl text-gray-500">
 					Komornik jest funkcjonariuszem publicznym działającym przy Sądzie
@@ -86,7 +89,11 @@ export default function Example() {
 									<div className="-mt-6">
 										<div>
 											<span className="inline-flex items-center justify-center rounded-xl bg-red-500 p-3 shadow-lg">
-												<img src={paragraph} alt="Paragraf" className="h-8 w-8" />
+												<img
+													src={paragraph}
+													alt="Paragraf"
+													className="h-8 w-8"
+												/>
 											</span>
 										</div>
 										<h3 className="mt-8 text-xl font-semibold leading-8 tracking-tight text-gray-900">

@@ -29,8 +29,14 @@ export default function Footer() {
 			<h2 id="footer-heading" className="sr-only">
 				Stopka
 			</h2>
-			<div className="mx-auto max-w-7xl pt-12 pb-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
-				<img className="h-24 aspect-auto mb-8" src={godlo} alt="Godło Polski" />
+			<div className="mx-auto max-w-7xl pt-12  px-4 sm:px-6 lg:pt-16 lg:px-8">
+				<div className="w-[88px] h-[88px] mb-8">
+					<img
+						className="h-[88px] w-full object-cover"
+						src={godlo}
+						alt="Godło Polski"
+					/>
+				</div>
 				<div className="md:grid md:grid-cols-2 lg:grid-cols-12 md:gap-8">
 					{/* Podstawowe dane */}
 					<div className="space-y-8 lg:col-span-5">
@@ -169,13 +175,13 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="mt-12 border-t border-gray-200 pt-8">
-					<p className="text-sm text-gray-500 xl:text-center">
+				<div className="mt-12 border-t border-gray-200 py-8">
+					<p className="text-sm text-gray-800 xl:text-center">
 						&copy; 2023 Komornik Sylwester Karolak.{" "}
 						<a
 							href="http://360stack.pl"
 							target="_blank"
-							className="text-red-500"
+							className="text-red-600"
 						>
 							Projekt i wykonanie <span className="font-bold">360stack.pl</span>
 						</a>
